@@ -46,14 +46,20 @@ const IndiaTimeClock = () => {
   return (
     <div className='main_container'>
 
+            <button onDoubleClick={toggleFullScreen}
+              style={{
+                width: '100vw', 
+                height: '100vh', 
+                background: 'transparent', 
+                border: 'none', 
+                // cursor: 'pointer'
+              }}
+            >
         <div className='our_time'>
-            {/* <h1>Current Time in India:</h1> */}
             <h2 className='our_time'>{time}</h2>
-
-            <button onClick={toggleFullScreen}>
-        {isFullScreen ? 'Exit Full Screen' : 'Go Full Screen'}
-      </button>
         </div>
+        
+      </button>
     </div>
   );
 };
