@@ -5,13 +5,20 @@ import "./style.css"
 
 const IndiaTimeClock = () => {
     const [time, setTime] = useState('');
+    const [date, setDate] = useState('');
     const [isFullScreen, setIsFullScreen] = useState(false);
 
   useEffect(() => {
     const updateTime = () => {
-      const options = { timeZone: 'Asia/Kolkata', hour12: true, hour: 'numeric', minute: 'numeric', second: 'numeric' };
-      const indiaTime = new Date().toLocaleTimeString('en-US', options);
+      const optionsTime = { timeZone: 'Asia/Kolkata', hour12: true, hour: 'numeric', minute: 'numeric', second: 'numeric' };
+      const optionsDate = { timeZone: 'Asia/Kolkata', day: 'numeric', month: 'long', year: 'numeric' };
+
+      const indiaTime = new Date().toLocaleTimeString('en-US', optionsTime);
+      const indiaDate = new Date().toLocaleDateString('en-US', optionsDate);
+
       setTime(indiaTime);
+      setDate(indiaDate);
+
     };
 
     updateTime(); // Update immediately
@@ -55,10 +62,11 @@ const IndiaTimeClock = () => {
                 // cursor: 'pointer'
               }}
             >
-        <div className='our_time'>
+        <div className='time_container'>
             <h2 className='our_time'>{time}</h2>
+            <h3 className='our_date'>{date}</h3>
         </div>
-        
+
       </button>
     </div>
   );
