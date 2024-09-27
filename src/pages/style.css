@@ -1,0 +1,14 @@
+.main_container{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.our_time{
+    color: white;
+    font-size: 100px;
+}
