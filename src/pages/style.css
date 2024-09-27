@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    font-size: 1rem;
+    /* font-size: 1rem; */
 }
 
 .time_container{
@@ -16,9 +16,9 @@
 
 .our_time{
     /* color: white; */
-    font-size: 8rem;
+   font-size: 100px;
 }
 .our_date{
     color: rgb(188, 188, 188);
-    font-size: 2rem;
+    font-size: 40px;
 }
