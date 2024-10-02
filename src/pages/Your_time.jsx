@@ -198,7 +198,8 @@ const IndiaTimeClock = () => {
             setDate(indiaDate);
     
           
-            if (indiaTime === '12:00:00 AM' ) {
+            // if (indiaTime === '12:00:00 AM' ) {
+            if (indiaTime === '2:40:00 PM' ) {
                 playMidnightAudio();  
                 triggerConfettiWithDelays(); 
             }
