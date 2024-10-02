@@ -199,7 +199,7 @@ const IndiaTimeClock = () => {
     
           
             // if (indiaTime === '12:00:00 AM' ) {
-            if (indiaTime === '2:40:00 PM' ) {
+            if (indiaTime === '2:43:00 PM' ) {
                 playMidnightAudio();  
                 triggerConfettiWithDelays(); 
             }
