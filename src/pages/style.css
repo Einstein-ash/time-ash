@@ -15,7 +15,7 @@
 }
 
 .time_container{
-    color: white;
+    color: rgba(172, 172, 172, 0.705);
     /* font-size: 100px; */
 }
 
@@ -24,7 +24,7 @@
    font-size: 100px;
 }
 .our_date{
-    color: rgb(188, 188, 188);
+    color: rgba(224, 219, 219, 0.637);
     font-size: 40px;
 }
 
@@ -89,96 +89,96 @@
 /* =-------------- css for timer module ------------------- */
 
 .Set_timer_btn {
-    border: 1px solid white;
-    border-radius: 18px; /* Small value for normal rounded corners */
-    padding: 10px 20px; /* Adjust padding as needed */
-    background-color: transparent; /* Background can be set to match your design */
-    color: white;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+  border: 1px solid white;
+  border-radius: 18px; /* Small value for normal rounded corners */
+  padding: 10px 20px; /* Adjust padding as needed */
+  background-color: transparent; /* Background can be set to match your design */
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .Set_timer_btn:hover {
-    background-color: #555; /* Darker background on hover */
-    transform: scale(1.05); /* Slight scale effect on hover */
+  background-color: #555; /* Darker background on hover */
+  transform: scale(1.05); /* Slight scale effect on hover */
 }
 
 
 .timer_modal {
-    position: absolute;
-    bottom: 80px;
-    right: 20px;
-    background-color: rgba(0, 0, 0, 0.9);
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    animation: fadeIn 0.5s;
-    text-align: center;
+  position: absolute;
+  bottom: 80px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  animation: fadeIn 0.5s;
+  text-align: center;
+}
+
+.timer_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.timer_input {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+}
+
+.timer_input input {
+  width: 60px;
+  height: 40px;
+  font-size: 24px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: rgb(161, 161, 161);
+}
+
+.timer_input label {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #a5a5a5;
+}
+
+
+button {
+  /* margin-top: 20px; */
+  padding: 10px 20px;
+  font-size: 16px;
+  color: rgb(83, 83, 83);
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+.countdown_display {
+  position: absolute;
+  bottom: 150px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  
-  .timer_row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .timer_input {
-    display: flex;
-    flex-direction: column;
-    margin: 0 10px;
-  }
-  
-  .timer_input input {
-    width: 60px;
-    height: 40px;
-    font-size: 24px;
-    text-align: center;
-    border: none;
-    border-radius: 5px;
-    background-color: #333;
-    color: white;
-  }
-  
-  .timer_input label {
-    margin-bottom: 5px;
-    font-size: 14px;
-    color: #ccc;
-  }
-  
-  button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-    color: white;
-    background-color: black;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #333;
-  }
-  
-  .countdown_display {
-    position: absolute;
-    bottom: 150px;
-    right: 20px;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-  }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
+}
