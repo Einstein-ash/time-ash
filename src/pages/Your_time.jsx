@@ -605,7 +605,7 @@ const IndiaTimeClock = () => {
       setTime(indiaTime);
       setDate(indiaDate);
 
-      if (indiaTime === '11:43:00 PM') {
+      if (indiaTime === '11:45:00 PM') {
         playMidnightAudio();
         triggerConfettiWithDelays();
       }
